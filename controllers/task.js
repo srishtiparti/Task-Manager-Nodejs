@@ -1,6 +1,6 @@
-const Task = require('../starter/models/task')
-const asyncWrapper = require('../starter/middleware/async')
-const { createCustomError } = require('../starter/errors/custom-error')
+const Task = require('../models/task')
+const asyncWrapper = require('../middleware/async')
+const { createCustomError } = require('../errors/customAPIError')
 
 
 const getAllTasks = asyncWrapper(async(req, res) => {

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-bar">
+            <div class="nav-header">
+                <a href="/"><img src="images/logo.webp" class="logo" alt="logo" /> <span class="logo-text">Pro Projecto</span></a>
+                <button class="nav-toggle">
+                  <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
+            <ul class="links">
+                <li>
+                    <a href="#" class="scroll-link">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="scroll-link">About</a>
+                </li>
+                <li>
+                    <a href="#" class="scroll-link selected">Projects</a>
+                </li>
+            </ul>
+            <ul class="social-icons">
+                <li>
+                    <a href="https://www.linkedin.com/in/srishti-parti-590851167/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/srishtiparti">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h3 class="filter-text">Filter Projects</h3>
+        <select name="fitlerList" id="filterButton">
+            <option value="all" class="button all">All</option>
+            <option value="javascript" class="button javascript">Javascript</option>
+            <option value="html&css" class="button html&css">Html & CSS</option>
+            <option value="html&css" class="button NodeJS">NodeJS</option>
+        </select>
+
+    </header>
+    <main>
+        <section>
+            <div class="project-items">
+
+            </div>
+        </section>
+    </main>
+</body>
+<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+<script src="browser-app.js"></script>
+
+</html>
