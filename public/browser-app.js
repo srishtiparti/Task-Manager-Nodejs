@@ -13,6 +13,13 @@ const data = [{
         path: "./task-manager/index.html",
         language: ["Html", "CSS", "JS"],
         github: "https://github.com/srishtiparti/VanillaJS"
+    },
+    {
+        name: "Perfume Store",
+        img: "images/perfume.jpg",
+        path: "./perfume-store/views/homepage.ejs",
+        language: ["Html", "CSS", "JS"],
+        github: "https://github.com/srishtiparti/VanillaJS"
     }
 ]
 
