@@ -16,7 +16,7 @@ const data = [{
     },
     {
         name: "JWT Create User",
-        img: "images/perfume.jpg",
+        img: "images/tasks.jpg",
         path: "./JWT-login/index.html",
         language: ["Html", "CSS", "JS"],
         github: "https://github.com/srishtiparti/VanillaJS"
@@ -59,17 +59,3 @@ function displayData(data) {
     //displaying it in class - menu-item
     project.innerHTML = displayData
 }
-
-const btn = document.querySelector(".nav-toggle")
-const links = document.querySelector(".links")
-const social = document.querySelector(".social-icons")
-
-btn.addEventListener("click", function() {
-    //     console.log(links.classList.contains("links"));
-    //      if (links.classList.contains("show-links")) {
-    //     links.classList.remove("show-links");
-    //   } else {
-    //     links.classList.add("show-links");
-    //   }
-    links.classList.toggle("show-links");
-})
