@@ -17,7 +17,7 @@ const data = [{
     {
         name: "Perfume Store",
         img: "images/perfume.jpg",
-        path: "./perfume-store/views/homepage.ejs",
+        path: "./perfume-store/app.js",
         language: ["Html", "CSS", "JS"],
         github: "https://github.com/srishtiparti/VanillaJS"
     }
