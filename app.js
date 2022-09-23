@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 const path = require('path');
 const bodyParser = require('body-parser');
-const books = require('./routes/task')
+const routes = require('./routes/task')
 const notFound = require('./middleware/not-found')
 const errorHandlerMiddleware = require('./middleware/errorHandler')
 
@@ -16,13 +16,12 @@ require('dotenv').config()
 /***********************  Middleware  ******************************************/
 app.use(express.static('./public'))
 app.use(express.json())
-    // for 404 error
-    //app.use(notFound)
-    // for 500 error
-app.use(errorHandlerMiddleware)
+app.use('/api/v1', routes)
 
-/***********************  Routes  ******************************************/
-app.use('/api/v1', books)
+/***********************  Route  ******************************************/
+
+app.use(notFoundMiddleware);
+app.use(errorHandlerMiddleware);
 const port = process.env.PORT || 3000
     /***********************  Connecting to DB first before listening  ******************************************/
 const start = async() => {

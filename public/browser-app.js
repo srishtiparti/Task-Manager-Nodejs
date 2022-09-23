@@ -15,9 +15,9 @@ const data = [{
         github: "https://github.com/srishtiparti/VanillaJS"
     },
     {
-        name: "Perfume Store",
+        name: "JWT Create User",
         img: "images/perfume.jpg",
-        path: "./perfume-store/app.js",
+        path: "./JWT-login/index.html",
         language: ["Html", "CSS", "JS"],
         github: "https://github.com/srishtiparti/VanillaJS"
     }
