@@ -7,20 +7,7 @@ const data = [{
         language: ["Html", "CSS", "JS"],
         github: "https://github.com/srishtiparti/VanillaJS"
     },
-    {
-        name: "Task Manager",
-        img: "images/tasks.jpg",
-        path: "./task-manager/index.html",
-        language: ["Html", "CSS", "JS"],
-        github: "https://github.com/srishtiparti/VanillaJS"
-    },
-    {
-        name: "JWT Create User",
-        img: "images/tasks.jpg",
-        path: "./JWT-login/index.html",
-        language: ["Html", "CSS", "JS"],
-        github: "https://github.com/srishtiparti/VanillaJS"
-    }
+
 ]
 
 var filter = document.getElementById("filterButton");
