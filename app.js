@@ -20,9 +20,9 @@ app.use('/api/v1', routes)
 
 /***********************  Route  ******************************************/
 
-app.use(notFoundMiddleware);
+app.use(notFound);
 app.use(errorHandlerMiddleware);
-const port = process.env.PORT || 3000
+const port = 4000
     /***********************  Connecting to DB first before listening  ******************************************/
 const start = async() => {
     try {
