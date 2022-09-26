@@ -1,8 +1,10 @@
 //const port = process.env.PORT || 3000
-
+require('express-async-errors');
 const express = require('express')
 const app = express()
-const books = require('./routes/task')
+const path = require('path');
+const bodyParser = require('body-parser');
+const routes = require('./routes/task')
 const notFound = require('./middleware/not-found')
 const errorHandlerMiddleware = require('./middleware/errorHandler')
 
@@ -14,14 +16,13 @@ require('dotenv').config()
 /***********************  Middleware  ******************************************/
 app.use(express.static('./public'))
 app.use(express.json())
-    // for 404 error
-    //app.use(notFound)
-    // for 500 error
-app.use(errorHandlerMiddleware)
+app.use('/api/v1', routes)
 
-/***********************  Routes  ******************************************/
-app.use('/api/v1', books)
-const port = process.env.PORT || 3000
+/***********************  Route  ******************************************/
+
+app.use(notFound);
+app.use(errorHandlerMiddleware);
+const port = process.env.PORT || 8080
     /***********************  Connecting to DB first before listening  ******************************************/
 const start = async() => {
     try {
