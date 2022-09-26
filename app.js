@@ -22,7 +22,7 @@ app.use('/api/v1', routes)
 
 app.use(notFound);
 app.use(errorHandlerMiddleware);
-const port = 4000
+const port = process.env.PORT || 8080
     /***********************  Connecting to DB first before listening  ******************************************/
 const start = async() => {
     try {
